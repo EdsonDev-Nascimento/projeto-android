@@ -1,0 +1,253 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&display=swap');
+
+@font-face {
+    font-family: android;
+    src: url('../fontes/idroid.otf') format('opentype');
+}
+
+:root{
+    --cor1: #cbfc90;
+    --cor2: #71ca05;
+    --cor3: #35a11a;
+    --cor4: #246b11;
+
+    --fonte-padrao: arial, verdana, 'sans-serif';
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'android', cursive;
+
+    --margin-titulos: 10px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+body{
+    width: auto;
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+    
+
+}
+
+main p{   
+    text-indent: 25px;
+    padding: 15px 0px;
+    text-align: justify;
+    line-height: 1.7em;
+   
+}
+
+.fundodestaques{
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    
+
+}
+
+
+header{
+    min-width: 230px;
+    height: 100%;   
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3), var(--cor2) );
+    color: white;
+    padding: 1px 1px 1px;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.411);
+}
+#principal{
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.479);
+    text-align: center;
+    color: white;
+    font: normal 3em var(--fonte-destaque);
+}
+
+#styleheaderfont{
+    text-indent: 0px;
+    text-align: center;
+}
+header > p{
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    padding: 3px 15px;
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.479);
+
+    
+}
+
+nav.menu >ul{ 
+    padding:10px; 
+    list-style:none; 
+    margin-left: 10px;  
+}
+nav.menu > ul li{
+    display: inline-block;
+    width: auto;
+    padding: 5px;
+    border-radius: 5px;
+    font: bold 1em var(--fonte-padrao);
+    
+}
+
+nav.menu >ul li:hover{
+    background-color: var(--cor1);
+    color: white;
+    transition-duration: .5s;
+}
+
+nav.menu >ul li{
+    color:var(--cor1);
+    text-decoration: none;
+}
+
+nav.menu > ul li:hover{
+    color: var(--cor4);
+}
+
+h1{
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-top: var(--margin-titulos);
+    margin-left: var(--margin-titulos);
+}
+h1#tituloprincipal{
+    font-size: 1.8em;
+  
+}
+main{
+    min-width: 250;
+    max-width: 850px;
+    background-color: white;
+    width: auto;
+    padding: 15px;
+    margin: auto;  
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.452);
+
+    
+}
+
+img{
+    display: block;
+    margin: auto;
+    
+}
+
+img.imagensgrandes{
+    width: 100%;
+}
+img.imagenspequenas{
+    max-width: 320px;
+}
+
+#videoandroid{
+    background-color: var(--cor4);
+    margin: 0px -15px;
+    padding: 20px;
+    padding-bottom: 56%;
+    position: relative;
+    
+    
+}
+
+iframe{
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.assunto{
+    font-family: var(--fonte-android);
+    color: var(--cor4) ;
+
+}
+
+
+
+aside >h2{
+    background-color: var(--cor2);
+    padding: 3px 0px 3px 5px;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    
+}
+aside{
+    background-color: var(--cor1);
+    text-align: justify;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.247);
+           
+}
+
+
+
+section#conteudoaprendermais{
+    padding: 5px;
+}
+footer{
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+}
+.destaquemain{
+    color: var(--cor3);
+    font-weight: bold;
+}
+a.destaquefooter{
+    font-weight: bold;
+    color: white;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+}
+
+tr{
+    height: 25px;
+    width: auto;
+}
+
+a.destaquemain::after{
+    content:"\00A0\1F517\00A0" ;
+
+}
+
+a.destaquemain{
+    text-decoration: none;
+
+}
+a.destaquemain:hover{
+    color: var(--cor4);
+    background-color: var(--cor1);
+    text-decoration: underline;
+}
+
+/*o primeiro código após a barra é para o simbolo, os outros dois são um código de espaçamento sem quebra de linha, apenas para deixar um espaço entre o simbolo(primeiro código) e o Link/texto*/
+a.saibamais::before{
+    content: '\1F5F8\00A0\00A0';
+}
+
+a.saibamais{
+    color: black;
+}
+a.saibamais:hover{
+    color: white;
+    background-color: var(--cor4);
+}
